@@ -1,0 +1,102 @@
+body {
+  background-color: #eee;
+  color: black; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+  html:after, body:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: Helvetica Neue, Helvetica, arial, sans serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+bold, strong {
+  font-weight: bold; }
+
+em, i {
+  font-style: italic; }
+
+a {
+  color: grey; }
+  a:hover, a:focus {
+    color: grey; }
+
+.content-form {
+  max-width: 640px;
+  padding: 20px;
+  margin: 0 auto; }
+
+label {
+  display: block;
+  padding: 7px 0; }
+
+.js select {
+  display: none; }
+
+label {
+  cursor: pointer; }
+
+.content-wrapper {
+  margin: 0 0 20px; }
+  .content-wrapper:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.naturalSelection a:link, .naturalSelection a:visited {
+  color: #333; }
+.naturalSelection a:hover, .naturalSelection a:focus {
+  color: #000; }
+.naturalSelection-active {
+  border: 1px solid grey;
+  background: white;
+  color: black;
+  font-weight: bold; }
+  .naturalSelection-active:hover, .naturalSelection-active:focus {
+    color: black; }
+.naturalSelection-inner {
+  border: 1px solid grey;
+  background: white; }
+  .naturalSelection-inner .active a {
+    font-weight: bold; }
+  .naturalSelection-inner a {
+    text-decoration: none;
+    color: #000; }
+    .naturalSelection-inner a:hover, .naturalSelection-inner a:focus {
+      background: #eee;
+      color: #000; }
+
+.button {
+  font-family: Helvetica Neue, Helvetica, arial, sans serif;
+  font-size: 1rem;
+  padding: 6px 12px;
+  background: #fc0;
+  border: 2px solid black;
+  border-radius: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background-color 0.5s ease; }
+  .button-wrapper {
+    text-align: center; }
+  .button:hover {
+    background: white; }
+
+@media screen and (min-width: 640px) {
+  label {
+    float: left;
+    width: 50%; }
+
+  .naturalSelection-wrapper {
+    float: right;
+    width: 50%; }
+
+  .button-wrapper {
+    text-align: right; } }

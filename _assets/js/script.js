@@ -1,0 +1,3 @@
+jQuery(function($){
+    $('select').naturalSelection();
+});
