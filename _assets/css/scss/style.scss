@@ -1,6 +1,13 @@
+// palette: http://www.colourlovers.com/palette/3386265/Abada_Kedabra_Sparks
+    $lightest:          #f0f8ed;
+    $light:             #d2e9e4;
+    $accent-mid:        #33a77a;
+    $accent-dark:       #277976;
+    $accent-darkest:    #226572;
+
 // === 1.  Baseline
 body {
-    background-color: #eee;
+    background-color: $lightest;
     color: black;
 }
 html, body {
@@ -33,9 +40,9 @@ em, i {
 // === 4.  Elements
 
 a {
-    color: grey;
+    color: $accent-dark;
     &:hover, &:focus {
-        color: grey;
+        color: $accent-darkest;
     }
 }
 
@@ -90,7 +97,7 @@ label {
             text-decoration: none;
             color: #000;
             &:hover, &:focus {
-                background: #eee;
+                background: $light;
                 color: #000;
             }
         }
@@ -101,8 +108,9 @@ label {
     font-family: Helvetica Neue, Helvetica, arial, sans serif;
     font-size: 1rem;
     padding: 6px 12px;
-    background: #fc0;
-    border: 2px solid black;
+    background: $light;
+    border: 1px solid $accent-darkest;
+    color: $accent-darkest;
     border-radius: 12px;
     cursor: pointer;
     // font-weight: 100;
@@ -112,12 +120,13 @@ label {
         text-align: center;
     }
     &:hover {
-        background: white;
+        background: $accent-mid;
     }
 }
 
 
 @media screen and (min-width: 640px) {
+
     label {
         float: left;
         width: 50%;

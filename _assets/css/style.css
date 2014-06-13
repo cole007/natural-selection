@@ -1,5 +1,5 @@
 body {
-  background-color: #eee;
+  background-color: #f0f8ed;
   color: black; }
 
 html, body {
@@ -25,9 +25,9 @@ em, i {
   font-style: italic; }
 
 a {
-  color: grey; }
+  color: #277976; }
   a:hover, a:focus {
-    color: grey; }
+    color: #226572; }
 
 .content-form {
   max-width: 640px;
@@ -71,15 +71,16 @@ label {
     text-decoration: none;
     color: #000; }
     .naturalSelection-inner a:hover, .naturalSelection-inner a:focus {
-      background: #eee;
+      background: #d2e9e4;
       color: #000; }
 
 .button {
   font-family: Helvetica Neue, Helvetica, arial, sans serif;
   font-size: 1rem;
   padding: 6px 12px;
-  background: #fc0;
-  border: 2px solid black;
+  background: #d2e9e4;
+  border: 1px solid #226572;
+  color: #226572;
   border-radius: 12px;
   cursor: pointer;
   letter-spacing: 1px;
@@ -87,7 +88,7 @@ label {
   .button-wrapper {
     text-align: center; }
   .button:hover {
-    background: white; }
+    background: #33a77a; }
 
 @media screen and (min-width: 640px) {
   label {
