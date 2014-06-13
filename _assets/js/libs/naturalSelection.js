@@ -26,15 +26,14 @@ jQuery.fn.naturalSelection = function() {
         // loop through select options
         self.find('option').each(function(i) {
             var value = $(this).val();
-            var j=i;
             var text = $(this).text();
             if (value.length == 0) value = text;
             var selected = $(this).attr('selected');
             if(selected && selected.length > 0) {
-                label.text(text);
-                input.val(value);
+                naturalSelection.prev('.naturalSelection-active').text(text);
+                naturalSelection.next('.naturalSelection-hidden').val(value);
             }
-            else if (i == 0) $('.naturalSelection-active').text(text);
+            else if (i == 0) naturalSelection.prev('.naturalSelection-active').text(text);
             var classIs = [];
             var output = '<li';
             if (i == 0) classIs.push('first');
